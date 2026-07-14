@@ -139,29 +139,29 @@ padding:80px 0;
 }
 
 .shots{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:10px;
+scrollbar-width:none;
+}
+
+.shots::-webkit-scrollbar{
+display:none;
 }
 
 .phone{
-background:#111;
-padding:12px;
-border-radius:40px;
-box-shadow:
-0 0 20px rgba(0,255,153,.15),
-0 0 40px rgba(255,215,0,.15);
-transition:.4s;
-}
-
-.phone:hover{
-transform:translateY(-10px);
+flex:0 0 auto;
+width:170px;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(255,215,0,.15);
 }
 
 .phone img{
 width:100%;
 display:block;
-border-radius:28px;
+border-radius:18px;
 }
 
 /* VERSION */
@@ -200,39 +200,31 @@ margin-top:60px;
 
 <h1>Win Bangla Taka</h1>
 
-<section class="gallery">
+<div class="shots">
 
-<h2 class="section-title">Screenshots</h2>
-
-<div class="screenshot-row">
-
-<div class="screenshot-card">
-<img src="screenshots/home.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/home.jpg">
 </div>
 
-<div class="screenshot-card">
-<img src="screenshots/games.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/games.jpg">
 </div>
 
-<div class="screenshot-card">
-<img src="screenshots/skycrash.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/skycrash.jpg">
 </div>
 
-<div class="screenshot-card">
-<img src="screenshots/coinflip.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/coinflip.jpg">
 </div>
 
-<div class="screenshot-card">
-<img src="screenshots/dice.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/dice.jpg">
 </div>
 
-<div class="screenshot-card">
-<img src="screenshots/withdraw.jpg" alt="Screenshot">
+<div class="phone">
+<img src="screenshots/withdraw.jpg">
 </div>
-
-</div>
-
-</section>
 
 <a class="download-btn"
 href="https://github.com/shojibkhan009/Win-Bangla-Taka/releases/download/V.1.0/Win_Bangla_Taka.apk">
